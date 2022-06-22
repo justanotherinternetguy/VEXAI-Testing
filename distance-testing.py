@@ -1,5 +1,5 @@
 # README:
-# Quick testing of odometry on a simulated bot + visualization
+# Quick testing of distance plotting on a simluated bot
 # Currently implemented: distance formula between 2 coordinates
 
 import matplotlib.pyplot as plt
