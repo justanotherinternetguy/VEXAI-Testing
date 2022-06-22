@@ -1,3 +1,7 @@
+# README:
+# Quick testing of odometry on a simulated bot + visualization
+# Currently implemented: distance formula between 2 coordinates
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pygame
@@ -32,7 +36,7 @@ def calc_dist(origin_x, origin_y, curr_x, curr_y):
     return d
 
 while run:
-    text = font.render(str(calc_dist(0, 0, x, y)), True, green, blue)
+    text = font.render(f"Dist: {calc_dist(0, 0, x, y)}", True, green, blue)
     textRect = text.get_rect()
     textRect.center = (700, 700)
     
